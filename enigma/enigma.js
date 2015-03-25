@@ -2,77 +2,89 @@ var Enigma = function(){
 	this.encrypt = function(messageToEncrypt) {
 		var letter = messageToEncrypt;
 
-	letter = letter.replace("a","j");
-	letter = letter.replace("b","d");
-	letter = letter.replace("c","w");
-	letter = letter.replace("d","o");
-	letter = letter.replace("e","v");
-	letter = letter.replace("f","a");
-	letter = letter.replace("g","r");
-	letter = letter.replace("h","i");
-	letter = letter.replace("i","g");
-	letter = letter.replace("j"," ");
-	letter = letter.replace("k","x");
-	letter = letter.replace("l","u");
-	letter = letter.replace("m","n");
-	letter = letter.replace("n","s");
-	letter = letter.replace("o","y");
-	letter = letter.replace("p","q");
-	letter = letter.replace("q","c");
-	letter = letter.replace("r","p");
-	letter = letter.replace("s","'");
-	letter = letter.replace("t","f");
-	letter = letter.replace("u","m");
-	letter = letter.replace("v","z");
-	letter = letter.replace("w","t");
-	letter = letter.replace("x","k");
-	letter = letter.replace("y","h");
-	letter = letter.replace("z","b");
-	letter = letter.replace(" ","e");
-	letter = letter.replace("'","l");
-	letter = letter.replace(".",".");
-	letter = letter.replace(",",",");
-	letter = letter.replace(":",":");
-	letter = letter.replace(";",";");
-	return letter;	
+		splitLetter = letter.split('');
+			splitLetter[0] = "j";
+			splitLetter[1] = "d";
+			splitLetter[2] = "w";
+			splitLetter[3] = "o";
+			splitLetter[4] = "v";
+			splitLetter[5] = "a";
+			splitLetter[6] = "r";
+			splitLetter[7] = "i";
+			splitLetter[8] = "g";
+			splitLetter[9] = " ";
+			splitLetter[10] = "x";
+			splitLetter[11] = "u";
+			splitLetter[12] = "n";
+			splitLetter[13] = "s";
+			splitLetter[14] = "y";
+			splitLetter[15] = "q";
+			splitLetter[16] = "c";
+			splitLetter[17] = "p";
+			splitLetter[18] = "'";
+			splitLetter[19] = "f";
+			splitLetter[20] = "m";
+			splitLetter[21] = "z";
+			splitLetter[22] = "t";
+			splitLetter[23] = "k";
+			splitLetter[24] = "h";
+			splitLetter[25] = "b";
+			splitLetter[26] = "e";
+			splitLetter[27] = "l";
+			splitLetter[28] = ".";
+			splitLetter[29] = ",";
+			splitLetter[30] = ":";
+			splitLetter[31] = ";";
+
+	var encrypt ="";
+	for (i=0; i<32; i++){
+		encrypt += splitLetter[i];
+	} 
+	return encrypt;
+		
 	}
 
 	this.decrypt = function(messageToDecrypt) {
 		var letter = messageToDecrypt;
 
-	letter = letter.replace("j","a");
-	letter = letter.replace("d","b");
-	letter = letter.replace("w","c");
-	letter = letter.replace("o","d");
-	letter = letter.replace("v","e");
-	letter = letter.replace("a","f");
-	letter = letter.replace("r","g");
-	letter = letter.replace("i","h");
-	letter = letter.replace("g","i");
-	letter = letter.replace(" ","j");
-	letter = letter.replace("x","k");
-	letter = letter.replace("u","l");
-	letter = letter.replace("n","m");
-	letter = letter.replace("s","n");
-	letter = letter.replace("y","o");
-	letter = letter.replace("q","p");
-	letter = letter.replace("c","q");
-	letter = letter.replace("p","r");
-	letter = letter.replace("'","s");
-	letter = letter.replace("f","t");
-	letter = letter.replace("m","u");
-	letter = letter.replace("z","v");
-	letter = letter.replace("t","w");
-	letter = letter.replace("k","x");
-	letter = letter.replace("h","y");
-	letter = letter.replace("b","z");
-	letter = letter.replace("e"," ");
-	letter = letter.replace("l","'");
-	letter = letter.replace(".",".");
-	letter = letter.replace(",",",");
-	letter = letter.replace(":",":");
-	letter = letter.replace(";",";");
-	return letter;	
-	}
+		splitLetter = letter.split('');
+			splitLetter[0] = "a";
+			splitLetter[1] = "b";
+			splitLetter[2] = "c";
+			splitLetter[3] = "d";
+			splitLetter[4] = "e";
+			splitLetter[5] = "f";
+			splitLetter[6] = "g";
+			splitLetter[7] = "h";
+			splitLetter[8] = "i";
+			splitLetter[9] = "j";
+			splitLetter[10] = "k";
+			splitLetter[11] = "l";
+			splitLetter[12] = "m";
+			splitLetter[13] = "n";
+			splitLetter[14] = "o";
+			splitLetter[15] = "p";
+			splitLetter[16] = "q";
+			splitLetter[17] = "r";
+			splitLetter[18] = "s";
+			splitLetter[19] = "t";
+			splitLetter[20] = "u";
+			splitLetter[21] = "v";
+			splitLetter[22] = "w";
+			splitLetter[23] = "x";
+			splitLetter[24] = "y";
+			splitLetter[25] = "z";
+			splitLetter[26] = " ";
+			splitLetter[27] = "'";
+			splitLetter[28] = ".";
+			splitLetter[29] = ",";
+			splitLetter[30] = ":";
+			splitLetter[31] = ";";
 
+	var decrypt ="";
+	for (i=0; i<32; i++){
+		decrypt += splitLetter[i];
+	} 
+	return decrypt;
+	}
 }
