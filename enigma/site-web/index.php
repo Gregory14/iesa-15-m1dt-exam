@@ -99,7 +99,7 @@
 			<form action="search.php" method="post">
 				<label for="searchPlanet">Quelle planète souhaitez-vous découvrir ?</label><input type="text" name="searchPlanet"><input type="submit" value="envoyer">
 			</form>
-			<div id="map" style="width:100%; height:200px;"></div>
+			<div id="map" style="width:90%; height:200px;"></div>
 		</footer>	
 	</div>
 	
