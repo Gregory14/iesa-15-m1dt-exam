@@ -31,7 +31,7 @@
 	
 			<div class="planet">
 				<h2><?php echo $planete->nom; ?></h2>
-				<img src="img/terre.jpg" alt="Nom de la planète">
+				<?php echo '<img src="img/'.$planete->image.'" alt="Nom de la planète">'?>
 				<ul>
 					<li><span>Taille : </span> <?php echo $planete->taille; ?></li>
 					<li><span>Distance du soleil : </span><?php echo $planete->distance; ?></li>

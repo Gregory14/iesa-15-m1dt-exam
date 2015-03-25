@@ -62,6 +62,7 @@ section {
 	float: left;
 	margin: 1%;
 	background-color: #777;
+	min-height: 440px;
 }
 
 h2 {
@@ -73,6 +74,7 @@ h2 {
 .planet img {
 	display: block;
 	width: 100%;
+	max-height: 231px;
 }
 
 .planet ul {
