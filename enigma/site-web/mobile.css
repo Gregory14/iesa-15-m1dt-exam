@@ -100,6 +100,10 @@ footer label{
 	margin-right: 15px;
 }
 
+#map {
+	margin-top: 20px;
+}
+
 @media screen and (max-width: 600px) {
   .planet {
     width: 95%;
