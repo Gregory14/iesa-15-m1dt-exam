@@ -3,8 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Le système solaire !</title>
-	<link rel="stylesheet" href="desktop.css">
-	<link rel="stylesheet" href="mobile.css">
+	<link rel="stylesheet" media="screen and (min-width: 801px)" href="desktop.css">
+	<link rel="stylesheet" media="screen and (max-width: 800px)" href="mobile.css">
 </head>
 <body>
 	<div id="mainContent">
@@ -23,7 +23,6 @@
 			<li>Uranus</li>
 			<li>Neptune</li>
 		</ul></nav>
-		<div class="clearBoth"></div>
 		<section>		
 			<div class="planet">
 				<h2>Nom de la planète</h2>
