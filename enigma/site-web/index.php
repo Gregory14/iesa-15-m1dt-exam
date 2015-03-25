@@ -24,78 +24,23 @@
 			<li>Neptune</li>
 		</ul></nav>
 		<section>		
+<?php 
+	$fichier = 'planetes.xml';
+	$xml = simplexml_load_file($fichier);
+	foreach($xml as $planete){ ?>
+	
 			<div class="planet">
-				<h2>Nom de la planète</h2>
+				<h2><?php echo $planete->nom; ?></h2>
 				<img src="img/terre.jpg" alt="Nom de la planète">
 				<ul>
-					<li><span>Taille : </span>10</li>
-					<li><span>Distance du soleil : </span>409</li>
+					<li><span>Taille : </span> <?php echo $planete->taille; ?></li>
+					<li><span>Distance du soleil : </span><?php echo $planete->distance; ?></li>
 				</ul>
-				<p>Une planète est un corps céleste orbitant autour du Soleil ou d'une autre étoile de l'Univers et possédant une masse suffisante pour que sa gravité la maintienne en équilibre hydrostatique, c'est-à-dire sous une forme presque sphérique. Certaines définitions étendent celle-ci aux objets libres de masse planétaire.</p>
+				<p><?php echo substr($planete->description, 0, 99); ?></p>
 			</div>
-			<div class="planet">
-				<h2>Nom de la planète</h2>
-				<div><img src="img/terre.jpg" alt="Nom de la planète"></div>
-				<ul>
-					<li>10</li>
-					<li>409</li>
-				</ul>
-				<p>Une planète est un corps céleste orbitant autour du Soleil ou d'une autre étoile de l'Univers et possédant une masse suffisante pour que sa gravité la maintienne en équilibre hydrostatique, c'est-à-dire sous une forme presque sphérique. Certaines définitions étendent celle-ci aux objets libres de masse planétaire.</p>
-			</div>
-			<div class="planet">
-				<h2>Nom de la planète</h2>
-				<div><img src="img/terre.jpg" alt="Nom de la planète"></div>
-				<ul>
-					<li>10</li>
-					<li>409</li>
-				</ul>
-				<p>Une planète est un corps céleste orbitant autour du Soleil ou d'une autre étoile de l'Univers et possédant une masse suffisante pour que sa gravité la maintienne en équilibre hydrostatique, c'est-à-dire sous une forme presque sphérique. Certaines définitions étendent celle-ci aux objets libres de masse planétaire.</p>
-			</div>
-			<div class="planet">
-				<h2>Nom de la planète</h2>
-				<div><img src="img/terre.jpg" alt="Nom de la planète"></div>
-				<ul>
-					<li>10</li>
-					<li>409</li>
-				</ul>
-				<p>Une planète est un corps céleste orbitant autour du Soleil ou d'une autre étoile de l'Univers et possédant une masse suffisante pour que sa gravité la maintienne en équilibre hydrostatique, c'est-à-dire sous une forme presque sphérique. Certaines définitions étendent celle-ci aux objets libres de masse planétaire.</p>
-			</div>
-			<div class="planet">
-				<h2>Nom de la planète</h2>
-				<div><img src="img/terre.jpg" alt="Nom de la planète"></div>
-				<ul>
-					<li>10</li>
-					<li>409</li>
-				</ul>
-				<p>Une planète est un corps céleste orbitant autour du Soleil ou d'une autre étoile de l'Univers et possédant une masse suffisante pour que sa gravité la maintienne en équilibre hydrostatique, c'est-à-dire sous une forme presque sphérique. Certaines définitions étendent celle-ci aux objets libres de masse planétaire.</p>
-			</div>
-			<div class="planet">
-				<h2>Nom de la planète</h2>
-				<div><img src="img/terre.jpg" alt="Nom de la planète"></div>
-				<ul>
-					<li>10</li>
-					<li>409</li>
-				</ul>
-				<p>Une planète est un corps céleste orbitant autour du Soleil ou d'une autre étoile de l'Univers et possédant une masse suffisante pour que sa gravité la maintienne en équilibre hydrostatique, c'est-à-dire sous une forme presque sphérique. Certaines définitions étendent celle-ci aux objets libres de masse planétaire.</p>
-			</div>
-			<div class="planet">
-				<h2>Nom de la planète</h2>
-				<div><img src="img/terre.jpg" alt="Nom de la planète"></div>
-				<ul>
-					<li>10</li>
-					<li>409</li>
-				</ul>
-				<p>Une planète est un corps céleste orbitant autour du Soleil ou d'une autre étoile de l'Univers et possédant une masse suffisante pour que sa gravité la maintienne en équilibre hydrostatique, c'est-à-dire sous une forme presque sphérique. Certaines définitions étendent celle-ci aux objets libres de masse planétaire.</p>
-			</div>
-			<div class="planet">
-				<h2>Nom de la planète</h2>
-				<div><img src="img/terre.jpg" alt="Nom de la planète"></div>
-				<ul>
-					<li>10</li>
-					<li>409</li>
-				</ul>
-				<p>Une planète est un corps céleste orbitant autour du Soleil ou d'une autre étoile de l'Univers et possédant une masse suffisante pour que sa gravité la maintienne en équilibre hydrostatique, c'est-à-dire sous une forme presque sphérique. Certaines définitions étendent celle-ci aux objets libres de masse planétaire.</p>
-			</div>
+	
+	<?php }
+?>
 		</section>
 
 		<footer>
